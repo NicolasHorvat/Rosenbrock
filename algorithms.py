@@ -348,7 +348,7 @@ def interior_point_ineq(p, x0, method="newton", mu0=1.0, mu_factor=0.2, max_oute
 
                 phi_trial = float(phi_fun(x_trial, mu_val))
 
-                # Armijo on φ_μ
+                # Armijo
                 if phi_trial <= phi_k + c1 * alpha * dphi_k:
                     break
 
